@@ -1,0 +1,12 @@
+# Árvore Binária - Remoção
+
+## O que faz
+- Inserir nós (menores à esquerda, maiores à direita)
+- Percursos: pré, em e pós-ordem
+- Remover nós: folha, 1 filho ou 2 filhos (Sucessor)
+
+## Por que recursão?
+Árvore é naturalmente recursiva (cada subárvore é uma árvore menor). É igual boneca russa: vai abrindo até o fim e volta resolvendo. Código fica mais simples, sem controle manual de ponteiros. Professor já usou recursão na inserção, mantive o padrão.
+
+## Erro que corrigi
+No `encontrarSucessor` eu ia pra direita (pegava o maior), mas o correto é ir pra esquerda (pegar o menor da subárvore direita).
